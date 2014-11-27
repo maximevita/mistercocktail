@@ -1,10 +1,14 @@
 class CocktailsController < ApplicationController
   def index
+    @cocktails = Cocktail.all
+  end
+
+  def show
   end
 
   def new
   end
 
-  def show
+  def create
   end
 end
