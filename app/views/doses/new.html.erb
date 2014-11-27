@@ -1,2 +1,8 @@
-<h1>Doses#new</h1>
-<p>Find me in app/views/doses/new.html.erb</p>
+<h1>Add an ingredient and its quantity</h1>
+
+<%= form_for([@cocktail, @dose]) do |f| %>
+  <%= f.label :amount %>
+  <%= f.number_field :amount %>
+  <%= f.select(:ingredient_id, Ingredient.all.collect{ |i| [ i.name, i.id ] }) %>
+  <%= f.submit %>
+<% end %>

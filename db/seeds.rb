@@ -8,3 +8,12 @@
 
 Ingredient.create(name: "ice cubes")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "sparkling water")
+Ingredient.create(name: "coca cola")
+Ingredient.create(name: "orangina")
+Ingredient.create(name: "sugar")
+Ingredient.create(name: "strawberry")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "rhum")
+Ingredient.create(name: "pastis")
