@@ -1,3 +1,10 @@
+<% content_for(:title) do %>
+  <%= @cocktail.name %> is on MisterCocktail
+<% end %>
+
+<% content_for(:description) do %>
+  <%= @cocktail.name %>
+<% end %>
 
 <h2><%= @cocktail.name %></h2>
 <div><%= image_tag @cocktail.picture.url(:medium) %></div>
@@ -13,6 +20,5 @@
 <% end %>
 </ul>
 
-<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
-<br>
+<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %><br>
 <%= link_to "Back to all cocktails", cocktails_path %>
