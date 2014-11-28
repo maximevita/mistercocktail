@@ -1,8 +1,10 @@
 <h1>Create a cocktail</h1>
 <p>You will add ingredients later</p><br><br>
 
-<%= form_for(@cocktail) do |f| %>
+<%= form_for(@cocktail, html: {multipart: true}) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <%= f.label :picture %>
+  <%= f.file_field :picture %>
   <%= f.submit %>
 <% end %>
